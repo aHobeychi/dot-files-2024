@@ -1,22 +1,2 @@
-import = [
-    "~/.config/alacritty/themes/themes/gruvbox_material_hard_dark.toml"
-]
-
-[font]
-size = 20.0
-
-[font.bold]
-family = "RobotoMono"
-style = "Heavy"
-
-[font.bold_italic]
-family = "RobotoMono"
-style = "Heavy Italic"
-
-[font.italic]
-family = "RobotoMono"
-style = "Medium Italic"
-
-[font.normal]
-family = "RobotoMono"
-style = "Medium"
+[window]
+padding.x = 100
