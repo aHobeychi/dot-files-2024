@@ -12,7 +12,12 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "alexh.plugins" }, { import = "alexh.plugins.lsp" } }, {
+local plugin_paths = {
+	{ import = "alexh.plugins" },
+	{ import = "alexh.plugins.lsp" },
+}
+
+local options = {
 	checker = {
 		enabled = true,
 		notify = false,
@@ -20,4 +25,43 @@ require("lazy").setup({ { import = "alexh.plugins" }, { import = "alexh.plugins.
 	change_detection = {
 		notify = true,
 	},
-})
+}
+
+require("lazy").setup(plugin_paths, options)
+
+local wk = require("which-key")
+wk.register({
+	s = {
+		name = "Window Management", -- optional group name
+	},
+	e = {
+		name = "File Explorer", -- optional group name
+	},
+	f = {
+		name = "Fuzzy Finder", -- optional group name
+	},
+	c = {
+		name = "Code", -- optional group name
+	},
+	t = {
+		name = "Tab Management", -- optional group name
+	},
+	w = {
+		name = "Session Management", -- optional group name
+	},
+	r = {
+		name = "Lsp & Rename", -- optional group name
+	},
+	d = {
+		name = "Show line diagnostics", -- optional group name
+	},
+	D = {
+		name = "Show buffer diagnostics", -- optional group name
+	},
+	l = {
+		name = "Trigger linting for this file", -- optional group name
+	},
+	g = {
+		name = "File Options", -- optional group name
+	},
+}, { prefix = "<leader>" })

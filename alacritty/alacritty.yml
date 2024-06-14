@@ -11,7 +11,7 @@ window:
     x: 0
     y: 0
 
-  opacity: 0.95
+  opacity: 1
   dynamic_padding: false
 
   decorations: full
@@ -31,34 +31,37 @@ font:
   glyph_offset:
     x: 0
     y: 0
-      
 colors:
+  # Default colors
   primary:
-    background: '0x1d2021'
-    foreground: '0xdfbf8e'
-    normal:
-      black:   '0x665c54'
-      red:     '0xea6962'
-      green:   '0xa9b665'
-      yellow:  '0xe78a4e'
-      blue:    '0x7daea3'
-      magenta: '0xd3869b'
-      cyan:    '0x89b482'
-      white:   '0xdfbf8e'
-    bright:
-      black:   '0x928374'
-      red:     '0xea6962'
-      green:   '0xa9b665'
-      yellow:  '0xe3a84e'
-      blue:    '0x7daea3'
-      magenta: '0xd3869b'
-      cyan:    '0x89b482'
-      white:   '0xdfbf8e'
+    background: "0x222222"
+    foreground: "0xf7f1ff"
 
+  # Normal colors
+  normal:
+    black: "0x2c2525"
+    red: "0xfd6883"
+    green: "0xadda78"
+    yellow: "0xf9cc6c"
+    blue: "0xf38d70"
+    magenta: "0xa8a9eb"
+    cyan: "0x85dacc"
+    white: "0xfff1f3"
+
+  # Bright colors
+  bright:
+    black: "0x72696a"
+    red: "0xfd6883"
+    green: "0xadda78"
+    yellow: "0xf9cc6c"
+    blue: "0xf38d70"
+    magenta: "0xa8a9eb"
+    cyan: "0x85dacc"
+    white: "0xfff1f3"
 
 mouse:
   hide_when_typing: true
 
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
-theme: Atelierforest.dark
+# theme: Atelierforest.dark
