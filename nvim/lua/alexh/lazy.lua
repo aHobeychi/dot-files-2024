@@ -62,6 +62,6 @@ wk.register({
 		name = "Trigger linting for this file", -- optional group name
 	},
 	g = {
-		name = "File Options", -- optional group name
+		name = "Git Options", -- optional group name
 	},
 }, { prefix = "<leader>" })

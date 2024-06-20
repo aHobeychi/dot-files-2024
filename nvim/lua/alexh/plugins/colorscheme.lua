@@ -7,13 +7,4 @@ return {
 			vim.cmd([[colorscheme monokai-pro-spectrum]])
 		end,
 	},
-	{ "diegoulloao/neofusion.nvim", priority = 1000, config = true, opts = ... },
-	{
-		"rebelot/kanagawa.nvim",
-		priority = 1000,
-		-- config = function()
-		-- 	vim.cmd([[colorscheme kanagawa-dragon]])
-		-- end,
-		opts = ...,
-	},
 }
